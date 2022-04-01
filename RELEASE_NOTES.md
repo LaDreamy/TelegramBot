@@ -1,2 +1,3 @@
 ### 0.1.0-SNAPSHOT
-- Added issues for future completion.
+* Added stub telegram bot.
+* Added SpringBoot skeleton project.
