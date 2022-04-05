@@ -1,0 +1,26 @@
+package com.github.LaDreamy.tb;
+
+import com.github.LaDreamy.tb.command.Command;
+import com.github.LaDreamy.tb.command.HelpCommand;
+import org.junit.jupiter.api.DisplayName;
+
+import static com.github.LaDreamy.tb.command.CommandName.HELP;
+import static com.github.LaDreamy.tb.command.HelpCommand.HELP_MESSAGE;
+
+@DisplayName("Testing for HelpCommand")
+public class HelpCommandTest extends AbstractCommandTest {
+    @Override
+    String getCommandName() {
+        return HELP.getCommandName();
+    }
+
+    @Override
+    String getCommandMessage() {
+        return HELP_MESSAGE;
+    }
+
+    @Override
+    Command getCommand() {
+        return new HelpCommand(sendBotMessageService);
+    }
+}
